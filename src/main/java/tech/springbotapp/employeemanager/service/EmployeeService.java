@@ -2,6 +2,7 @@ package tech.springbotapp.employeemanager.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import tech.springbotapp.employeemanager.exception.UserNotFoundException;
 import tech.springbotapp.employeemanager.model.Employee;
 import tech.springbotapp.employeemanager.repo.EmployeeRepo;
 
@@ -11,7 +12,7 @@ import java.util.UUID;
 @Service
 public class EmployeeService {
     @Autowired
-    private final EmployeeRepo employeeRepo;
+    private EmployeeRepo employeeRepo;
 
     public EmployeeService(EmployeeRepo employeeRepo) {
         this.employeeRepo = employeeRepo;

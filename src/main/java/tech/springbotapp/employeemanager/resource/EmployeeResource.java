@@ -1,4 +1,4 @@
-package tech.springbotapp.employeemanager;
+package tech.springbotapp.employeemanager.resource;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
